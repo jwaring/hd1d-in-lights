@@ -291,10 +291,10 @@ void loop() {
   int pinValue = digitalRead(TOGGLE_PIN);
 //  Serial.println(pinValue);
   if (!pinValue) {
-    clear_leds();
-    delay(1000);  // debounce
 
     if (!digitalRead(WAVE_PIN)) {
+      clear_leds();
+      delay(1000);  // debounce
       hd_init(wave_mode + 1);
 
     } else if (!digitalRead(DELAY_PIN)) {
