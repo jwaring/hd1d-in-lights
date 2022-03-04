@@ -1,4 +1,4 @@
-1-D Hydrodyanmic model
+1-D Hydrodynamic model
 ---
 
 This is a channel model, which implements depth-averaged momentum and continuity equations.
